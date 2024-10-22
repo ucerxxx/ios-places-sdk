@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "GooglePlaces", platforms: [.iOS(.v15)],
-  products: [.library(name: "GooglePlaces", targets: ["GooglePlacesTarget"])], dependencies: [],
+  products: [.library(name: "GooglePlaces", type: .dynamic, targets: ["GooglePlacesTarget"])], dependencies: [],
   targets: [
     .binaryTarget(
       name: "GooglePlaces",
